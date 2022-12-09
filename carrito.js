@@ -1,4 +1,4 @@
-let productosEnCarrito = localStorage.getItem("productos-en-carrito");
+let productosEnCarrito = localStorage.getItem("productos-en-carrito"); //aca llamamos lo que guardamos anteriormente
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
@@ -113,7 +113,7 @@ function compraRealizada () {
     // console.log("Compraste");
 
     swal({
-        title: "Compra relizada!",
+        title: "Compra realizada!",
         text: "Muchas gracias por tu compra.",
         icon: "success", //Se le puede poner el icono de error tambien, y el info, question y warning, probarlos luego.
       });
